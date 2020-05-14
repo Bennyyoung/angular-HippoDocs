@@ -1,0 +1,46 @@
+<ng-container>
+  <div id="stepper1" class="bs-stepper linear vertical">
+    <div class="row m-0">
+      <div class="col-md-1">
+        <div class="bs-stepper-header p-0" role="tablist">
+          <div class="step " data-target="#test-l-1">
+            <button class="step-trigger">
+              <span class="bs-stepper-circle">1</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#test-l-2">
+            <button class="step-trigger">
+              <span class="bs-stepper-circle">2</span>
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="step" data-target="#test-l-3">
+            <button class="step-trigger">
+              <span class="bs-stepper-circle">3</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-11">
+        <div class="  bs-stepper-content">
+          <form class="" (ngSubmit)="onSubmit()">
+            <div id="test-l-1" class="content">
+              <div class="form-group">
+                <app-upload-file [stepperAccess]="stepper"></app-upload-file>
+              </div>
+            </div>
+            <div id="test-l-2" class="content">
+              <div class="form-group">
+                <app-select-properties [stepperAccess]="stepper"></app-select-properties>
+              </div>
+            </div>
+            <div id="test-l-3" class="content">
+              <app-download-file [stepperAccess]="stepper"></app-download-file>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

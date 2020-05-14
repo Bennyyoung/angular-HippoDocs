@@ -1,0 +1,56 @@
+<div id="tabs">
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-md-12 p-0 ">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active nav-home" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                (click)="selectTab('#nav-home')">CONVERT DOCUMENT</a>
+              <a class="nav-item nav-link nav-profile" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                role="tab" (click)="selectTab('#nav-profile')"><img
+                  src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">REQUEST
+                API KEY</a>
+            </div>
+          </nav>
+          <!------------------------------- file-upload part start ------------------------->
+          <div class="card mt-5 main-part">
+            <div class="card-body tab-content p-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <button type="button" class="btn btn-lg upload-button">Upload File</button>
+                <ngx-dropzone class="dropzone" (change)="onSelect($event)">
+                  <ngx-dropzone-label>
+                    <div class="drop-img">
+                      <img
+                        src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/upload.png">
+                      Upload file
+                    </div>
+                  </ngx-dropzone-label>
+                  <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                    <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+                  </ngx-dropzone-preview>
+                </ngx-dropzone>
+                <div class="drop-button">
+                  <button type="button" class="btn delete-button">
+                    <img class="p-1"
+                      src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
+                  </button>
+                  <div>
+                    <img class="message-circle-image"
+                      src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">
+                    <p>3</p>
+                    <button class="reset-button " (click)="stepperAccess.next()">
+                      <img class="p-1 m-2"
+                        src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/arrow.png">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <app-api-key [stepperAccess]="stepperAccess"></app-api-key>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

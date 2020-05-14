@@ -1,0 +1,162 @@
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #f3f3f3;
+  background-color: transparent; 
+  border-color: transparent transparent #f3f3f3; 
+  border-bottom: 4px solid !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #ACABB1;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+#tabs .nav-tabs .nav-link.nav-profile{
+border-bottom: 1px !important;
+}
+
+.nav-item.nav-link.active.nav-home{
+color: #4C3986 !important;
+}
+
+#term{
+ font-family: Lato;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 10px;
+ line-height: 12px;
+ text-align: center;
+ color: #4A4A4A;
+}
+
+.api-key{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: #ACABB1;
+}
+
+.convert-document{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+color: #4C3986
+}
+
+
+.main-part{
+height: 350px;
+background: #E8F2F7;
+border-radius: 8px;
+}
+
+.drop-img{
+display: grid;
+}
+
+.upload-button{
+background: #4C3986;
+padding: 12px 20px;
+border-radius: 8px 0px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #FFFFFF;
+}
+
+.delete-button{
+position: absolute;
+background: #FAFAFA;
+border-radius: 0px 8px;
+bottom: 0;
+left: 0px;
+color: #4C3986;
+background-size: 20px 18px;
+}
+
+
+.drop-button .reset-button{
+position: absolute;
+background: #4C3986;
+border-radius: 8px 0px;
+right: 0px;
+bottom: 0px;
+z-index: 1;
+}
+
+.drop-button .reset-button img{
+margin-left: 3px;
+}
+
+.drop-button .message-circle-image{
+position: absolute;
+right: 50px;
+bottom: 25px;
+z-index: 2;
+}
+
+.drop-button p{
+  position: absolute;
+  margin: 0px;
+  right: 60px;
+  bottom: 31px;
+  z-index: 3;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4C3986;
+}
+
+.download-file h5{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+color: #4A4A4A;
+}   
+
+.download-file p{
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #4A4A4A;
+}
+
+.download-file button{
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+background: #4C3986;
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+color: #F9F9F9;
+}
+
+.download-file{
+width: 100%;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+

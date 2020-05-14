@@ -1,0 +1,19 @@
+.upload-button {
+    background: #4C3986;
+    border-radius: 8px 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 12px 20px;
+}
+
+.drop-button .reset-button {
+    position: absolute;
+    background: #4C3986;
+    border-radius: 8px 0px;
+    right: 0px;
+    bottom: 0px;  
+}

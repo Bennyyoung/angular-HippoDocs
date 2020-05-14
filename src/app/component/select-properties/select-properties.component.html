@@ -1,0 +1,282 @@
+<div id="tabs">
+    <div class="container p-0">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link active nav-home" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CONVERT DOCUMENT</a>
+                      <a class="nav-item nav-link nav-profile" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">REQUEST API KEY</a>
+                    </div>
+                  </nav>
+
+                <div class="card mt-5 upload-part">
+                    <div class="card-body tab-content p-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <button type="button" class="btn btn-lg upload-button">Upload File</button>
+
+                            <div class="select-portion">
+                                <form [formGroup]="myForm">
+                                    <div class="row">
+                                        <div class="main-col col-md-6">
+                                            <div class="col-md-12 p-0">
+                                                <div class="display">
+                                                    <p id="margin-p">Margin</p>
+                                                </div>
+                                                <hr />
+                                                <div class="row p-0 mt-3 mb-3">
+                                                    <div class="margin-properties col-md-3">
+                                                        <p class="pl-3" id="margin-auto">Auto</p>
+                                                        <div class="margin-polygon">
+                                                            <img
+                                                                src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Polygon.png">
+                                                            <p>Custom</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="margin-box-img col-md-4">
+                                                        <img
+                                                            src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Marginbox.png">
+                                                    </div>
+                                                    <div class="primary-margin-field col-md-5">
+                                                        <div class="margin-field">
+                                                            <label for="top">Top &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                            </label>
+                                                            <input id="form-one" type="text" placeholder="">
+                                                            <small class="text-muted">mm</small>
+                                                        </div>
+
+                                                        <div class="margin-field">
+                                                            <label for="top">Header &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp;
+                                                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp;
+                                                            </label>
+                                                            <input id="form-two" type="text" placeholder="">
+                                                            <small class="text-muted">mm</small>
+                                                        </div>
+
+                                                        <div class="margin-field">
+                                                            <label for="top">Footer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp;
+                                                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp;
+                                                            </label>
+                                                            <input id="form-three" type="text" placeholder="">
+                                                            <small for="text-muted">mm</small>
+                                                        </div>
+
+                                                        <div class="margin-field">
+                                                            <label for="top">Bottom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                                &nbsp; &nbsp; &nbsp;</label>
+                                                            <input class="input" id="form-four" type="text"
+                                                                placeholder="">
+                                                            <small id="Top" class="text-muted">mm</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="encrypt-password col-md-12">
+                                                    <div class="display">
+                                                        <img
+                                                            src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">
+                                                        <h6>Encrypt PDF</h6>
+                                                    </div>
+                                                    <hr />
+                                                    <input type="password" formControlName="password"
+                                                        placeholder="Enter password for your PDF">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-0">
+                                                <div class="col-md-12">
+                                                    <div class="watermark">
+                                                        <div class="display">
+                                                            <img
+                                                                src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">
+                                                            <h6>Watermark</h6>
+                                                        </div>
+                                                        <hr />
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="watermark col-md-6 text-center">
+                                                            <div class="display">
+                                                                <label for="text">Text &nbsp; &nbsp; &nbsp;
+                                                                    &nbsp;</label>
+                                                                <input type="text" formControlName="text">
+                                                            </div>
+                                                            <div class="display">
+                                                                <label for="font">Font &nbsp; &nbsp; &nbsp; </label>
+                                                                <input type="text" formControlName="font">
+                                                            </div>
+                                                        </div>
+                                                        <div class="watermark col-md-6 text-center">
+                                                            <div class="display">
+                                                                <label for="angle">Angle &nbsp; &nbsp;</label>
+                                                                <input type="text" formControlName="angle">
+                                                            </div>
+                                                            <div class="file-upload-button display">
+                                                                <label for="upload">Upload &nbsp;</label>
+                                                                <input type="submit" formControlName="upload">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-col-2 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>Header</p>
+                                                    <hr />
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="check1">
+                                                            <input type="checkbox"
+                                                                class="form-check-input" id="check1"
+                                                                name="option1" value="something"
+                                                                checked>Page Number
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="check2">
+                                                            <input type="checkbox"
+                                                                class="form-check-input" id="check2"
+                                                                name="option2" value="something">Date
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p>Footer</p>
+                                                    <hr />
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="check3">
+                                                            <input type="checkbox"
+                                                                class="form-check-input" id="check3"
+                                                                name="option1" value="something"
+                                                                checked>Page Number
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label" for="check4">
+                                                            <input type="checkbox"
+                                                                class="form-check-input" id="check4"
+                                                                name="option2" value="something">Date
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="display">
+                                                        <img
+                                                            src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">
+                                                        <p>Permissions</p>
+                                                    </div>
+                                                    <hr />
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check5">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check5" name="option1"
+                                                                        value="something" checked>Copy
+                                                                    <span
+                                                                        class="checkbox-custom"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check6">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check6" name="option2"
+                                                                        value="something">Print
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check7">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check7" name="option2"
+                                                                        value="something">Assemble
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check8">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check8" name="option1"
+                                                                        value="something" checked>Modify
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check9">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check9" name="option2"
+                                                                        value="something">Annotation
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check10">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check10" name="option1"
+                                                                        value="something" checked>Fill
+                                                                    Form
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <label class="form-check-label"
+                                                                    for="check11">
+                                                                    <input type="checkbox"
+                                                                        class="form-check-input"
+                                                                        id="check11" name="option2"
+                                                                        value="something">Extract
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- select-portion-end -->
+                            <div class="drop-button">
+                                <button type="button" class="btn delete-button">
+                                    <img class="p-1"
+                                        src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
+                                </button>
+                                <div>
+                                    <img class="message-circle-image"
+                                        src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">
+                                    <p>3</p>
+                                    <button class="reset-button " (click)="stepperAccess.next()">
+                                        <img class="p-1 m-2"
+                                            src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/arrow.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <app-api-key></app-api-key>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

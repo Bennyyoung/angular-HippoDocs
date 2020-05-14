@@ -1,0 +1,337 @@
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+     background-color: transparent; 
+     border-color: transparent transparent #f3f3f3; 
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #ACABB1; 
+    font-size: 16px;
+    line-height: 19px
+}
+
+#tabs .nav-tabs .nav-link.nav-profile{
+  border-bottom: 1px !important;
+}
+
+.drop-img {
+    display: grid;
+}
+
+.select-portion row {
+    padding: 20px 60px;
+}
+
+.upload-button {
+    background: #E8F2F7;
+    border-radius: 8px;
+}
+
+.upload-button {
+    background: #4C3986;
+    padding: 12px 20px;
+    border-radius: 8px 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.delete-button {
+    position: absolute;
+    background: #FAFAFA;
+    border-radius: 0px 8px;
+    bottom: 0;
+    left: 0px;
+    color: #4C3986;
+    background-size: 20px 18px;
+}
+
+.drop-button .reset-button {
+    position: absolute;
+    background: #4C3986;
+    border-radius: 8px 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.drop-button .message-circle-image {
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+    z-index: 2;
+}
+
+.margin-box
+
+.drop-button p {
+    position: absolute;
+    margin: 0px;
+    right: 60px;
+    bottom: 31px;
+    z-index: 3;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C3986;
+}
+
+.download-file h5 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4A4A4A;
+}
+
+.download-file p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.download-file button {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    background: #4C3986;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: #F9F9F9;
+}
+
+small {
+    font-family: Lato;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 6px;
+    line-height: 7px;
+    color: #4C3986;
+}
+
+p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4A4A4A;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    background: #4A4A4A;
+    border-radius: 5px;
+}
+
+.form-check-label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #BDDAE9;
+}
+
+.form-check-input {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #BDDAE9;
+    box-sizing: border-box;
+}
+
+.encrypt-password h6 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ACABB1;
+}
+
+.encrypt-password input {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ACABB1;
+    box-sizing: border-box;
+    font-family: Lato;
+    padding-left: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6px;
+    line-height: 7px;
+    color: #ACABB1;
+    background: #E8F2F7;
+}
+
+.primary-margin-field .margin-field label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0px;
+    font-size: 8px;
+    line-height: 10px;
+    color: #ACABB1;
+}
+
+.primary-margin-field .margin-field input {
+    outline: 0;
+    border-width: 0 0 2px;
+    width: 30px;
+    height: 20px;
+    background: #E8F2F7;
+    border: 0;
+    border-bottom: 2px solid #ACABB1;
+    ;
+    font-size: 1.4rem;
+}
+
+.margin-box img {
+    height: 90px;
+}
+
+.margin-polygon {
+    position: relative;
+    display: flex;
+}
+
+.margin-polygon img {
+    margin-right: 5px;
+    height: 10px;
+    color: #4C3986;
+}
+
+.margin-polygon p {
+    height: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4C3986;
+}
+
+hr {
+    margin: 2px 2px 2px 2px;
+    height: 1px;
+    background: #ACABB1;
+    border-radius: 5px;
+}
+
+.display {
+    display: flex
+}
+
+.display #margin-p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4A4A4A;
+}
+
+#margin-auto {
+    font-family: Lato;
+    height: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4A4A4A;
+}
+
+.display img {
+    margin-right: 5px;
+    height: 12px;
+}
+
+.display p {
+    color: #ACABB1;
+}
+
+.watermark label{
+    margin:7px; 
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ACABB1;
+  }
+
+.watermark input {
+    width: 64px;
+    height: 20px;
+    border: 1px solid #ACABB1;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #E8F2F7;
+}
+
+.watermark h6{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #ACABB1;
+  } 
+
+.file-upload-button input {
+    background-image: url("https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/upload.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+
+.form-check-label input {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border: 1px solid #ACABB1;
+}
+
+form {
+    margin: 20px 50px;
+    padding-bottom: 20px;
+}
+
+.main-col {
+    padding: 0px 30px;
+}
+
+.main-col-2 {
+    padding: 0px 30px;
+}
+
+.main-col-2 .row {
+    margin-bottom: 25px;
+}
+
+.main-col .row {
+    margin-bottom: 25px;
+}
+
+.nav-item.nav-link.active.nav-home {
+    color: #4C3986 !important;
+}

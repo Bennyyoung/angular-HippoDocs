@@ -1,0 +1,132 @@
+.container{
+  padding: 0px;
+}
+
+
+.banner{
+  background-color: #4C3986;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 8px;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    width: 100%;
+    position: relative;
+    min-height: 280px;
+  }
+  .banner a {float: left;}
+   div.content {margin-left: 0;}
+  .banner-middle .avatar{
+    width: 70px !important;
+  }
+  .banner .banner-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 10px 0 20px 0 !important;
+ }
+ .btn.logout-btn{width: 100%}
+}
+
+@media screen and (max-width: 400px) {
+  .banner a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.banner .header{
+  width: 100%;
+  color: #eee;
+}
+
+.banner-middle .avatar{
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.banner-middle{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.banner .banner-middle{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  color: #F9F9F9;
+}
+
+
+.banner .banner-bottom{
+  position: absolute;
+  bottom: 0px;
+  margin: 20px;
+}
+
+.banner .logout-btn{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  text-align: center;
+  color: #FF6464;
+}
+
+.banner #time{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+  align-items: center;
+  color: #F9F9F9;
+}
+
+.banner #date{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0px;
+  align-items: center;
+  color: #F9F9F9;
+}
+
+
+#term{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 10px;
+   line-height: 12px;
+   text-align: center;
+   margin: 15px;
+   color: #4A4A4A;
+}
+
+.setting{
+   position: relative;
+   display: flex;
+}
+
+.setting img{
+  height: 15px;
+  margin-right: 5px;
+}
+
+

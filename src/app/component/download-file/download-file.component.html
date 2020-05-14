@@ -1,0 +1,43 @@
+<div id="tabs">
+  <div class="container p-0">
+    <div class="row">
+      <div class="col-md-12 p-0">
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active nav-home" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CONVERT DOCUMENT</a>
+            <a class="nav-item nav-link nav-profile" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">REQUEST API KEY</a>
+          </div>
+        </nav>
+        <div class="card mt-5 main-part">
+            <div class="card-body tab-content p-0" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <button type="button" class="btn btn-lg upload-button">Upload File</button>
+                <div class="download-file text-center">
+                  <h5>Congratulations!</h5>
+                  <p>Your file(s) have been converted. You can download the files & restart another conversion process.</p>
+                  <button class="btn btn-secondary">
+                    <img class="m-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/download.png">
+                    DOWNLOAD
+                    </button>
+                </div>
+                <div class="drop-button">
+                  <button  type="button" class="btn delete-button">
+                    <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
+                  </button>
+                  <div>
+                    <img class="message-circle-image" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">
+                    <p>2</p>
+                    <button class="reset-button " (click)="stepperAccess.reset()">
+                      <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/reset.png">
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <app-api-key></app-api-key>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
